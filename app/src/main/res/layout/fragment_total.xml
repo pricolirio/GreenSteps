@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_total"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/tv_actividades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actividades_registradas_totales"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/tv_actividades_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "0"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/distancia_recorrida"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_distancia_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "0"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_tiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tiempo_empleado"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_tiempo_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "0"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_combustible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/combustible_ahorrado_l"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_combustible_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "0"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_emisiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emisiones_co2_evitadas_kg"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_emisiones_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "0"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

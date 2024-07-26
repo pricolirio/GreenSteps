@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro">
+
+    <TextView
+        android:id="@+id/tv_mi_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.9"
+        android:background="@color/verde_medio"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Mi perfil"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Menu"
+        android:paddingRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/logopeq"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"/>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_logo"
+        android:hint="Nombre del usuario"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/et_fecha_nacimiento"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nombre"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:hint="Fecha de nacimiento"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/sp_vehiculo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/vehiculo_array"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_fecha_nacimiento"/>
+
+    <Button
+        android:id="@+id/btn_guardar_cambios"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios"
+        android:background="@drawable/boton_redondeado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/sp_vehiculo"/>
+
+    <include
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

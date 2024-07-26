@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro">
+
+    <TextView
+        android:id="@+id/tv_crear_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.8"
+        android:background="@color/verde_medio"
+        android:gravity="center"
+        android:text="Crear nuevo usuario"
+        android:textColor="#795548"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_crear_usuario"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nombre"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/et_fecha_nacimiento"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:hint="Fecha de nacimiento"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/sp_vehiculo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_fecha_nacimiento"
+        android:layout_marginTop="10dp"
+        android:entries="@array/vehiculo_array"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_vehiculo"
+        android:layout_marginTop="10dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/et_repeat_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="10dp"
+        android:hint="Repite contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:id="@+id/cb_accept_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_repeat_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:paddingRight="10dp"
+        android:buttonTint="@color/verde_medio"/>
+
+    <TextView
+        android:id="@+id/tv_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cb_accept_privacy_policy"
+        android:layout_alignBaseline="@id/cb_accept_privacy_policy"
+        android:text="He leído y acepto la "
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_privacy_policy_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_privacy_policy"
+        android:layout_alignBaseline="@id/tv_privacy_policy"
+        android:text="Política de Privacidad"
+        android:textColor="#0000FF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/btn_crear_usuario"
+        android:layout_width="142dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/tv_privacy_policy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="Crear usuario"
+        android:textSize="14sp"/>
+</RelativeLayout>
+

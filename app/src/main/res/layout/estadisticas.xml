@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro">
+
+    <TextView
+        android:id="@+id/tv_estadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.9"
+        android:background="@color/verde_medio"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Estadísticas"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Menu"
+        android:paddingRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/logopeq"
+        android:layout_centerInParent="true"
+        android:alpha="0.2"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_estadisticas"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginHorizontal="20dp"/>
+
+
+    <include
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

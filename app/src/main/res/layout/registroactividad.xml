@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro">
+
+    <TextView
+        android:id="@+id/tv_registrar_actividad"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.9"
+        android:background="@color/verde_medio"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Registrar actividad"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Menu"
+        android:paddingRight="16dp"/>
+
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_registrar_actividad"
+        android:layout_above="@+id/bottom_menu">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="40dp">
+
+            <TextView
+                android:id="@+id/tv_distancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distancia: "
+                android:textSize="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_velocidad_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Velocidad media: "
+                android:textSize="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="INICIAR"
+        android:background="@drawable/boton_circular"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btn_pausar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Pausar"
+        android:background="@drawable/boton_circular_amarillo"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+
+
+    <Button
+        android:id="@+id/btn_datos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="datos"
+        android:background="@drawable/boton_circular"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_marginLeft="280dp"
+        android:layout_marginBottom="45dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btn_reanudar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="REANUDAR"
+        android:background="@drawable/boton_circular"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_terminar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="TERMINAR"
+        android:background="@drawable/boton_circular_rojo"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/verde_claro"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_registrar_actividad"/>
+    <include
+        android:id="@+id/bottom_menu"
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

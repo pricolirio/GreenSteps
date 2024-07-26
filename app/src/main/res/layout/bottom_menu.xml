@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/verde_medio"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btn_progreso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Progreso"
+            android:drawableBottom="@drawable/progreso"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registro"
+            android:drawableBottom="@drawable/registro"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btn_comunidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comunidad"
+            android:drawableBottom="@drawable/comunidad"
+            android:background="@null"/>
+    </LinearLayout>
+</RelativeLayout>

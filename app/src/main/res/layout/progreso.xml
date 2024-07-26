@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro">
+
+    <TextView
+        android:id="@+id/tv_progreso"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.9"
+        android:background="@color/verde_medio"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Progreso"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Menu"
+        android:paddingRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:alpha="0.2"
+        android:src="@drawable/logopeq" />
+
+    <Button
+        android:id="@+id/btn_estadisticas"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Estadísticas"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_progreso"
+        android:background="@drawable/boton_redondeado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        />
+
+    <Button
+        android:id="@+id/btn_logros"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Logros"
+        android:textSize="18sp"
+        android:background="@drawable/boton_redondeado"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_estadisticas"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/btn_historial"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Historial"
+        android:textSize="18sp"
+        android:background="@drawable/boton_redondeado"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_logros"
+        android:layout_marginTop="60dp"/>
+
+    <include
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

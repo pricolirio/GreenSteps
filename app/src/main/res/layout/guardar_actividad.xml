@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_guardar_actividad"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.9"
+        android:background="@color/verde_medio"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Guardar actividad"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/logopeq"
+        android:layout_centerInParent="true"
+        android:alpha="0.3"/>
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_guardar_actividad"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Nombre: "
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/tv_nombre_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nombre"
+        android:text="Actividad 1"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nombre_valor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Distancia: "
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_distancia_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_distancia"
+        android:text="   Km"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_duracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_distancia_valor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Duración: "
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_duracion_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_duracion"
+        android:text="00:00:00"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_combustible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_duracion_valor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Combustible ahorrado: "
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_combustible_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_combustible"
+        android:text="   L"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_emisiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_combustible_valor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Emisiones CO2 evitadas: "
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_emisiones_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_emisiones"
+        android:text="   Kg"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btn_guardar_actividad"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="20dp"
+        android:background="@drawable/boton_redondeado"
+        android:layout_below="@+id/tv_emisiones_valor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/btn_descartar_actividad"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Descartar"
+        android:textSize="20dp"
+        android:background="@drawable/boton_redondeado_rojo"
+        android:layout_below="@+id/tv_emisiones_valor"
+        android:layout_toRightOf="@id/btn_guardar_actividad"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"/>
+
+
+
+</RelativeLayout>

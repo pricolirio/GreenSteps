@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Greensteps</string>
+    <string name="actividades_registradas_esta_semana">Actividades registradas esta semana</string>
+    <string name="combustible_ahorrado_l">Combustible ahorrado (L)</string>
+    <string name="distancia_recorrida">Distancia recorrida</string>
+    <string name="emisiones_co2_evitadas_kg">Emisiones CO2 evitadas (Kg)</string>
+    <string name="tiempo_empleado">Tiempo empleado</string>
+    <string name="registro_semanal">Registro semanal</string>
+    <string name="registro_mensual">Registro mensual</string>
+    <string name="actividades_registradas_este_mes">Actividades registradas este mes</string>
+    <string name="registro_total">Registro total</string>
+    <string name="actividades_registradas_totales">Actividades registradas totales</string>
+    <string-array name="vehiculo_array">
+        <item>Vehículo</item>
+        <item>Diésel pequeño</item>
+        <item>Diésel mediano</item>
+        <item>Diésel grande</item>
+        <item>Gasolina pequeño</item>
+        <item>Gasolina mediano</item>
+        <item>Gasolina grande</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
